@@ -1,0 +1,15 @@
+.dropzone {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 40vh;
+    border: 2px solid white;
+    transition: all 300ms;
+}
+
+
+.dropzoneActive {
+    background-color: coral;
+    border: 2px dotted white;
+}

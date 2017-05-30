@@ -12,13 +12,18 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.1",
+    "css-loader": "^0.28.4",
+    "node-sass": "^4.5.3",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-dropzone": "^3.13.2",
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.1",
+    "styled-components": "^2.0.0"
   },
   "devDependencies": {
     "babel": "^6.23.0",

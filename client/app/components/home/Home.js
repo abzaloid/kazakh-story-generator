@@ -1,19 +1,24 @@
 import React from 'react'
 import Dropzone from 'react-dropzone'
 import {connect} from 'react-redux'
-import {getStory} from '../middlewares/getStory'
+import {getStory} from '../../middlewares/getStory'
+import {HomeContainer, Title, DropzoneText} from './HomeStyles'
+import './HomeStyles.css'
 
 class Home extends React.Component {
     render() {
+
         console.log(this.props)
         return (
-            <div>
-                <Dropzone onDrop={this.handleDrop} />
+            <HomeContainer>
+                <Title>Kazakh story generator</Title>
+                <Dropzone className={'dropzone'} activeClassName={'dropzoneActive'} onDrop={this.handleDrop}>
+                    <DropzoneText>Drop your image here or click to upload an image</DropzoneText>
+                </Dropzone>
                 {this.props.loading && <span>Loading, please wait</span>}
                 {this.props.loaded && <span>Successfully uploaded image {this.props.data.filename}</span>}
                 {this.props.error && <div><span>Error occured, please try again</span> <span>{this.props.error.message}</span></div>}
-
-            </div>
+            </HomeContainer>
         )
     }
 
